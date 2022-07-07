@@ -2,7 +2,7 @@
 Skills learned: Azure Portal, Azure Sentinel, Kusto Query Language, Network Security Groups
 
 <h2>Description</h2>
-I am following a tutorial from a video at this <a href="https://www.youtube.com/watch?v=RoZeVbbZ0o0&t=29s">link</a> and expanding upon it.
+I am following a tutorial from a video at this <a href="https://www.youtube.com/watch?v=RoZeVbbZ0o0&t=29s">link</a> and expanding upon it. <br/>
 I will setup Azure Sentinel (SIEM) and connect it to a live virtual machine acting as a honey pot. I will observe live attacks (RDP Brute Force) from around the world and create a custom PowerShell script to find the attackers Geolocation information and plot it on the Azure Sentinel Map. I will also apply the NIST 800-53 control list to the virtual machine.
 
 <br/>
