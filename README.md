@@ -1,10 +1,9 @@
 # SIEM in Azure
-Skills learned: Azure Portal, Azure Sentinel, Kusto Query Language, Network Security Groups
+Skills learned: Azure Portal, Microsoft Sentinel, Kusto Query Language, Network Security Groups, Powershell
 
 <h2>Description</h2>
-I am following a tutorial from a video at this <a href="https://www.youtube.com/watch?v=RoZeVbbZ0o0&t=29s">link</a> and expanding upon it. <br/>
-I created a virtual machine in Azure and exposed it to the internet as a honeypot and connected Mircosoft Sentinel (SIEM) to it. I observed live attacks (RDP Brute Force) from around the world and created a custom PowerShell script to find the attackers Geolocation information and plot it on the Microsoft Sentinel Map. I will also apply the NIST 800-53 control list to the virtual machine.
-
+I am following a tutorial from a video at this <a href="https://www.youtube.com/watch?v=RoZeVbbZ0o0&t=29s">link</a>. <br/>
+I created a virtual machine in Azure and exposed it to the internet as a honeypot. I then created a Log Analytics Workspace in Azure and connected it to the VM to pull logs from the Windows Event Viewer.  Next, I connected Mircosoft Sentinel (SIEM) to the VM. I observed live attacks (RDP Brute Force) from around the world and used a custom PowerShell script to translate the attackers IP address to Geolocation data using an API and plotted it on the Microsoft Sentinel Map using custom logging. 
 <br/>
 
 <h2>Firewall rule to allow all traffic into VM</h2>
@@ -29,7 +28,7 @@ I created a virtual machine in Azure and exposed it to the internet as a honeypo
 
 <br/>
 
-<h2> Custom Powershell script to extract data from failed RDP logon and find geolocation through API </h2>
+<h2> Custom Powershell script to extract data from failed RDP login and find geolocation through API </h2>
 <p align="center">
 <img width="890" alt="Powershell Script running" src="https://user-images.githubusercontent.com/67126494/179144515-02644e67-ec02-4283-94a7-ea7ce069c099.png">
 </p> 
