@@ -6,7 +6,7 @@ I am following a tutorial from a video at this <a href="https://www.youtube.com/
 I created a virtual machine in Azure and exposed it to the internet as a honeypot. I then created a Log Analytics Workspace in Azure and connected it to the VM to pull logs from the Windows Event Viewer.  Next, I connected Mircosoft Sentinel (SIEM) to the VM. I observed live attacks (RDP Brute Force) from around the world and used a custom PowerShell script to translate the attackers IP address to Geolocation data using an API and plotted it on the Microsoft Sentinel Map using custom logging. 
 <br/>
 
-<h2>Firewall rule to allow all traffic into VM</h2>
+<h2>Firewall Rule to Allow All Traffic into VM</h2>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/67126494/179144406-85bcc3fb-0491-4a48-877a-fb8fe872705a.png" alt="all all firewall rule"/>
@@ -21,28 +21,28 @@ I created a virtual machine in Azure and exposed it to the internet as a honeypo
  
 <br/>
 
-<h2> Start Microsoft Sentinel and connect it to the Log Analytic Workspace </h2>
+<h2> Start Microsoft Sentinel and Connect it to the Log Analytic Workspace </h2>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/67126494/179144468-6f0d6d34-604e-472c-87c6-cbdb340faa9a.png" alt="Start Sentinel"/>
 </p>
 
 <br/>
 
-<h2> Custom Powershell script to extract data from failed RDP login and find geolocation through API </h2>
+<h2> Custom Powershell Script to extract data from failed RDP Login and find Geolocation through API </h2>
 <p align="center">
 <img width="890" alt="Powershell Script running" src="https://user-images.githubusercontent.com/67126494/179144515-02644e67-ec02-4283-94a7-ea7ce069c099.png">
 </p> 
 
 <br/>
 
-<h2> Querying the custom logs </h2>
+<h2> Querying the Custom Logs </h2>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/67126494/179144489-53e90aff-d691-4b6f-a49c-768434640785.png" alt="qeuried custom logs"/>
 </p>
 
 <br/>
 
-<h2> Final map of attacks </h2>
+<h2> Final Map of Attacks </h2>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/67126494/179144543-0da9a4ba-5e92-48c3-bb5c-976d14600419.png" alt="final attack map"/>
 </p>
